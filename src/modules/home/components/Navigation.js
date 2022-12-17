@@ -2,6 +2,8 @@ import React from "react";
 import styles from "../styles/Navigation.module.css";
 import { Link } from "react-router-dom";
 import { homePath } from "../routes/HomeRoute";
+import { loginPath } from "../../login/routes/LoginRoute";
+import { registerPath } from "../../register/routes/RegisterRoute";
 
 export const Navigation = () => {
   return (
@@ -12,6 +14,8 @@ export const Navigation = () => {
       <div className={styles.nav}>
         <nav>
           <Link to={homePath}>Home</Link>
+          <Link to={loginPath}>Login</Link>
+          <Link to={registerPath}>Register</Link>
         </nav>
       </div>
     </div>
