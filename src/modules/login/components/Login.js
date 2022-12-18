@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "../styles/Login.module.css";
+import { Link } from "react-router-dom";
+import { registerPath } from "../../register/routes/RegisterRoute";
 
 export const Login = () => {
   return (
@@ -18,7 +20,7 @@ export const Login = () => {
         </h1>
       </div>
 
-      <form>
+      <form className={styles.form}>
         <input
           aria-label="email"
           name="email"
@@ -40,12 +42,15 @@ export const Login = () => {
           Forgot password?
         </button>
 
-        <button className={styles.signUpButton} type="submit">
-          Sign Up
+        <button className={styles.logInButton} type="submit">
+          Log In
         </button>
-
-        <button className={styles.logInButton}>Log In</button>
       </form>
+
+      <span>{`Don't have an account?`}</span>
+      <Link to={registerPath} className={styles.returnToRegisterButton}>
+        Create new account
+      </Link>
     </div>
   );
 };
