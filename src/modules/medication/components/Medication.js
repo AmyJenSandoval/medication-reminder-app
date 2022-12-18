@@ -9,6 +9,7 @@ export const Medication = () => {
         <input
           className={styles.input}
           placeholder="Search by medication"
+          aria-label="Search by medication"
           type="text"
         />
       </div>
