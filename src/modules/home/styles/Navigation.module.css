@@ -1,17 +1,12 @@
 .container {
   display: flex;
-  justify-content: space-between;
-  font-size: 1em;
-}
-
-.logo {
-  padding: 8px;
-  margin: 8px;
+  flex-direction: row;
+  margin: 0.5em;
 }
 
 .nav {
-  padding: 8px;
-  margin: 8px;
+  padding: 0.5em;
+  margin: 0.5em;
 }
 
 a {
