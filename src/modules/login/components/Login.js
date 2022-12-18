@@ -1,9 +1,16 @@
 import React from "react";
 import styles from "../styles/Login.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { registerPath } from "../../register/routes/RegisterRoute";
+import { homePath } from "../../home/routes/HomeRoute";
 
 export const Login = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    navigate(homePath);
+  };
   return (
     <div className={styles.container}>
       <img
@@ -20,7 +27,7 @@ export const Login = () => {
         </h1>
       </div>
 
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <input
           aria-label="email"
           name="email"
