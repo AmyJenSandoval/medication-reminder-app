@@ -7,6 +7,24 @@
   display: block;
 }
 
+.img {
+  width: 100%;
+  max-width: 30em;
+  border-radius: 1em;
+}
+
+.heading {
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+.heading span {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  letter-spacing: 8px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -59,7 +77,6 @@
   font-size: large;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
   color: #10069f;
   cursor: pointer;
 }
