@@ -1,5 +1,7 @@
 .container {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
 }
 
 .container input {
@@ -9,7 +11,10 @@
 }
 
 .img {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
   max-width: 30em;
   border-radius: 1em;
 }
@@ -46,7 +51,7 @@
 
 .registerButton {
   width: 100%;
-  margin: 1.5em 0;
+  margin: 1.25em 0;
   background-color: #10069f;
   padding: 0.75em;
   border: none;

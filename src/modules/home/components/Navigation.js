@@ -9,15 +9,12 @@ import { medicationPath } from "../../medication/routes/MedicationRoute";
 export const Navigation = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.logo}>
-        <header>Mediminder: Medication Reminder App</header>
-      </div>
       <div className={styles.nav}>
         <nav>
           <Link to={homePath}>Home</Link>
           <Link to={loginPath}>Login</Link>
           <Link to={registerPath}>Register</Link>
-          <Link to={medicationPath}>My Medications</Link>
+          <Link to={medicationPath}>Medications</Link>
         </nav>
       </div>
     </div>

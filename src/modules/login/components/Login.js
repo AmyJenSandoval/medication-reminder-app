@@ -47,7 +47,7 @@ export const Login = () => {
         </button>
       </form>
 
-      <span>{`Don't have an account?`}</span>
+      <span className={styles.span}>{`Don't have an account?`}</span>
       <Link to={registerPath} className={styles.returnToRegisterButton}>
         Create new account
       </Link>
